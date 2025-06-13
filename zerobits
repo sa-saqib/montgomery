@@ -1,0 +1,18 @@
+
+'''import base64
+a= '73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d'
+byte = bytes.fromhex(a)
+print(byte)
+
+b= flagans= base64.b64encode(byte).decode('utf-8')
+print(b)
+
+from pwn import xor
+a= '73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d'
+bytexor = bytes.fromhex(a)
+print(bytexor)
+c= "7fk h! O!%O}iOv$f eb!'#Ori'um"
+cis= bytes.fromhex(c)
+result = xor(bytexor, cis)   '''
+
+
