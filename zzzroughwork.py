@@ -14,16 +14,17 @@
 # 0x90ffffffffffffffc09d1d94419d1d935f249d6604d8fd8138a7053ba2f2a521
 # print(hex(0x19F0C7D3A6B84E1F4DA59CE82A1F3D76C8EB67A13D9E2C147F03CBE5D7A2F19E76B0D9FAE31E84CB9F45E7AD13AC90B7 * 0x7FA3D1C2B8479B6F215D9EA43B6F0C83A7927E1DD9AB6F50E3D742B6B1C8A73D94AFBE67AC1F0E1B7DA2956F1C2E43B2))
 # print(hex(0xC8EB67A13D9E2C147F03CBE5D7A2F19E76B0D9FAE31E84CB9F45E7AD13AC90B7 * 0xA7927E1DD9AB6F50E3D742B6B1C8A73D94AFBE67AC1F0E1B7DA2956F1C2E43B2))
-from into8bits import into8
+# from into8bits import into8
 
 # print(hex(0x19F0C7D3A6B84E1F4DA59CE82A1F3D76 * 0x7FA3D1C2B8479B6F215D9EA43B6F0C83))
-print(into8(hex((0x76b0d9fae31e84cb9f45e7ad13ac90b7) * (0x94afbe67ac1f0e1b7da2956f1c2e43b2))[2:]))
+# print((hex((0x76b0d9fae31e84cb + 0x9f45e7ad13ac90b7) * (0x94afbe67ac1f0e1b + 0x7da2956f1c2e43b2))[2:]))
 # print(hex(0x9f45e7ad13ac90b7 * 0x7da2956f1c2e43b2))
 # c=((0x76b0d9fae31e84cb * 0x94afbe67ac1f0e1b))
 # d= (a - b - c)
 # print(hex(d))
 
-# from bitstohex import from8
+# from bitstohex import from8good with r64high
+# print(hex(0xda9fa5a4 * 0x10cc1d72a))
 
 # mid = from8(['dc', 'd6', 'c9', '0d', '79', '2f', '3b', 'cf', '73', '28', 'ad', '15', '03', '36', 'b1', 'db', '00', '00', '00', '00', '00', '00', '00', '00'])
 # mid1 = from8(['69', '1b', '10', '18', '79', 'cf', '27', '51', '8d', '07', '8c', '60', '31', 'b9', 'ef', '44'])
@@ -58,4 +59,9 @@ print(into8(hex((0x76b0d9fae31e84cb9f45e7ad13ac90b7) * (0x94afbe67ac1f0e1b7da295
 #         list.append(i)
 # print(list)
 
-print(hex(0x1c0c1d729 * 0xda9fa5a3))
+# print(hex(0x10cc1d72a * 0xda9fa5a4))
+# print(hex(0x1234567890abcdef1234567890abcdef * 0x1234567890abcdef1234567890abcdef ))
+
+
+a =pow(2,256) - 26959946654596436323893653559348051827142583427821597254581997273087
+print(hex(a))

@@ -12,7 +12,8 @@ def l8s(a,n):
     re6 = ls(re5)
     re7 = ls(re6)
     if m==0:
-        res = (m1)*['00'] + a     
+        # res = (m1)*['00'] + a 
+        res = a    
     elif m==1:
         res = m1*['00'] + re1 
     elif m==2:

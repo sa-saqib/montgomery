@@ -20,13 +20,8 @@ def sub2hex(a,b):
 
     return result
 
-# a=['07', 'f7', '02']
-# b= ["01"]
-# print(sub2hex(a,b))
 
 # b=['ff','f3', '1', '0'] 
-# a=[ '0', '0', '2', '0']
+# a=[ '0', '0', '1', '0']
 # print(sub2hex(a,b))
-
-
 

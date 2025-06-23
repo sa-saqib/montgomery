@@ -10,46 +10,33 @@ def ri8s(a,n):
     res=[]
     m1 = n>>3 #m1 = n//8
     m = n - (m1<<3)  #m=n%8
+    re1 = rs(a)
+    re2 = rs(re1)
+    re3 = rs(re2)
+    re4 = rs(re3)
+    re5 = rs(re4)
+    re6 = rs(re5)
+    re7 = rs(re6)
+
     if m==0:
         res = a[m1:] + m1*['00']     
     elif m==1:
-        res = rs(a[m1:]) + m1*['00']
+        res = re1[m1:] + m1*['00']
     elif m==2:
-        re1 = rs(a[m1:])
-        res = rs(re1) + m1*['00']
+        res = re2[m1:] + m1*['00']
     elif m==3:
-        re1 = rs(a[m1:])
-        re2 = rs(re1)
-        res = rs(re2) + m1*['00']
+        res = re3[m1:] + m1*['00']
     elif m==4:
-        re1 = rs(a[m1:])
-        re2 = rs(re1)
-        re3 = rs(re2)
-        res = rs(re3) + m1*['00']
+        res = re4[m1:] + m1*['00']
     elif m==5:
-        re1 = rs(a[m1:])
-        re2 = rs(re1)
-        re3 = rs(re2)
-        re4 = rs(re3)
-        res = rs(re4) + m1*['00']
+        res = re5[m1:] + m1*['00']
     elif m==6:
-        re1 = rs(a[m1:])
-        re2 = rs(re1)
-        re3 = rs(re2)
-        re4 = rs(re3)
-        re5 = rs(re4)
-        res = rs(re5) + m1*['00']
+        res = re6[m1:] + m1*['00']
     elif m==7:
-        re1 = rs(a[m1:])
-        re2 = rs(re1)
-        re3 = rs(re2)
-        re4 = rs(re3)
-        re5 = rs(re4)
-        re6 = rs(re5)
-        res = rs(re6) + m1*['00']
+        res = re7[m1:] + m1*['00']
 
     return res
 
 # a=['a2','b3','93','0d']
-# print(ri8s(a,26))
+# print(ri8s(a,229))
 

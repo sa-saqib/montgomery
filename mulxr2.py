@@ -19,5 +19,5 @@ def mulwithr2(a,curve):
 
     return result
 
-v=['01']
-print(mulwithr2(v,0))
+# v=['01']
+# print(mulwithr2(v,0))

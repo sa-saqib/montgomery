@@ -1,5 +1,7 @@
 #r^2 mod n for 256(R22) =0x4fffffffdfffffffffffffffefffffffbffffffff0000000000000003 (227 bits)
 # N ^-1 =  0xfffffffdfffffffffffffffffffffffeffffffffffffffffffffffff (224 bits)
+         #0xffffffff00000002000000000000000000000001000000000000000000000001
+            #['01', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '01', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '02', '00', '00', '00', 'ff', 'ff', 'ff', 'ff']
 
 # r^2 mod n for 384(R23)= 0x10000000200000000fffffffe000000000000000200000000fffffffe00000001 (257 bits)
 # N ^-1 = -0x14000000140000000c00000002fffffffcfffffffafffffffbfffffffe00000000000000010000000100000001 (357 bits)
@@ -65,6 +67,8 @@ def redc(v,curve):  # { v+ [ ( v *(- n^-1) mod R) N ] } / R
     
     return result
 
+# a=['01']
+# print(redc(a,0))
     # la = len(a)
     # lb = len(b)
     # ln = len(N[1])

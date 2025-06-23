@@ -49,32 +49,14 @@ def montgomery(a,b,curve):
 
 a=['01']
 b=['01']
-print(montgomery(a,b,0))
+print(montgomery(a,b,0)) 
 
 
-
-        
-
-
-
-    
-
-   
-
-
-    
-
-
-    
-
-    
-
-
-o=['ff','ff','ff','ff','ff','ff','ff','ff','00','00','00','00','00','00','00','00']
-p=['ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff']
-# N=['ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', '00', '00', '00', '00',
-#     '00', '00', '00', '00', '00', '00', '00', '00', '01', '00', '00', '00', 'ff', 'ff', 'ff', 'ff']
-print(montgomery(o,p,1))
+# o=['ff','ff','ff','ff','ff','ff','ff','ff','00','00','00','00','00','00','00','00']
+# p=['ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff','ff']
+# # N=['ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', 'ff', '00', '00', '00', '00',
+# #     '00', '00', '00', '00', '00', '00', '00', '00', '01', '00', '00', '00', 'ff', 'ff', 'ff', 'ff']
+# print(montgomery(o,p,1))
     
 
 
